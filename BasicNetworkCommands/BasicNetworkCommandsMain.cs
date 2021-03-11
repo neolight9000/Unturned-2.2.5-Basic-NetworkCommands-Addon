@@ -26,8 +26,8 @@ namespace BasicNetworkCommands
 			NetworkCommandsList.add(new NetworkCommand(6, new NetworkCommandDelegate(GetAllAnimalsPositions), new string[] { "animaldump", "animalsdump", "animalsposition", "animalspositions" }));
 			NetworkCommandsList.add(new NetworkCommand(10, new NetworkCommandDelegate(GetAllStructuresPositions), new string[] { "structuresdump", "structuredump", "structuresposition", "structurespositions" }));
 			NetworkCommandsList.add(new NetworkCommand(6, new NetworkCommandDelegate(GetAllPlayersPositions), new string[] { "playersdump", "playerdump", "getallplayers", "playerspositions" }));
-			NetworkCommandsList.add(new NetworkCommand(10, new NetworkCommandDelegate(Ban), new string[] { "ban", "Ban", "banplayer", "banuser" })); // to do in bot
-			NetworkCommandsList.add(new NetworkCommand(10, new NetworkCommandDelegate(Kick), new string[] { "kick", "Kick", "kickplayer", "kickuser" })); // to do in bot
+			NetworkCommandsList.add(new NetworkCommand(10, new NetworkCommandDelegate(Ban), new string[] { "ban", "Ban", "banplayer", "banuser" }));
+			NetworkCommandsList.add(new NetworkCommand(10, new NetworkCommandDelegate(Kick), new string[] { "kick", "Kick", "kickplayer", "kickuser" }));
 		}
 
         private void Ban(NetworkCommandArgs args)
